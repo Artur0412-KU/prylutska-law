@@ -2,11 +2,11 @@ import styles from './reviews.module.scss'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Right  from '../../assets/icons/arrow-right.svg'
 import  Left from '../../assets/icons/arrow-left.svg'
-import Photo1 from '../../assets/main/photo-1.jpg'
-import Photo2 from '../../assets/main/photo-2.jpg'
-import Photo3 from '../../assets/main/photo-3.jpg'
-import Photo4 from '../../assets/main/photo-4.jpg'
-import Photo5 from '../../assets/main/photo-5.jpg'
+import Photo1 from '../../assets/main/photo-1.svg'
+import Photo2 from '../../assets/main/photo-2.svg'
+import Photo3 from '../../assets/main/photo-3.svg'
+import Photo4 from '../../assets/main/photo-4.svg'
+import Photo5 from '../../assets/main/photo-5.svg'
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
 import "swiper/css";
@@ -50,18 +50,16 @@ function Reviews() {
                 <Swiper
                     ref={swiperRef}
                     slidesPerView={3}
+                    spaceBetween={75}
                     breakpoints={{
                         200: { // Виправлено порядок
-                            slidesPerView: 1,
-                            spaceBetween: 100
+                            slidesPerView: 1
                         },
                         1000: {
-                            slidesPerView: 2,
-                            spaceBetween: 100
+                            slidesPerView: 2
                         },
                         1500: {
-                            slidesPerView: 3,
-                            spaceBetween: 100
+                            slidesPerView: 3
                         }
                     }}
                     navigation={{

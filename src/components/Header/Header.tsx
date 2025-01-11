@@ -28,14 +28,14 @@ function Header() {
                         isOpen ? styles.headerContainer_Top__list_open : ''
                     }`}>
                     <li>
-                        <a href="#about" className={styles.headerContainer_Top__list__text}>Про мене</a>
+                        <a href="#about" className={styles.headerContainer_Top__list__text} onClick={() => setIsOpen(false)}>Про мене</a>
                     </li>
 
                     <li>
-                        <a href="#service" className={styles.headerContainer_Top__list__text}>Послуги та ціни</a>
+                        <a href="#service" className={styles.headerContainer_Top__list__text} onClick={() => setIsOpen(false)}>Послуги та ціни</a>
                     </li>
                     <li>
-                        <a href="#reviews" className={styles.headerContainer_Top__list__text}>Відгуки</a>
+                        <a href="#reviews" className={styles.headerContainer_Top__list__text} onClick={() => setIsOpen(false)}>Відгуки</a>
                     </li>
                 </ul>
                 <div className={`${styles.headerContainer_Top__burger} ${isOpen ? styles.headerContainer_Top__burger_close : ''}`} onClick={handleOpen}>
