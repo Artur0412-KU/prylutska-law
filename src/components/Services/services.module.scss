@@ -1,0 +1,81 @@
+.servicesContainer {
+  background-color: var(--light-color2);
+  padding: 95px 70px;
+  border-radius: 30px;
+
+  @media (max-width: 950px) {
+    padding: 37px 32px;
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 83px;
+
+    @media (max-width: 950px) {
+      font-size: 32px;
+    }
+
+    @media (max-width: 500px) {
+      margin-bottom: 60px;
+      font-size: 24px;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+
+    @media (max-width: 950px) {
+      grid-template-columns: 1fr;
+    }
+    &_card {
+        background-color: var(--light-blue-color);
+        border-radius: 30px;
+        padding: 24px 34px;
+        height: 266px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+
+      @media (max-width: 950px) {
+          padding: 25px 27px;
+      }
+
+      h1 {
+          font-size: 22px;
+          font-weight: bold;
+
+          @media (max-width: 500px) {
+            font-size: 16px;
+          }
+        }
+
+
+
+        a {
+          padding: 10px 34px;
+          background-color: var(--blue-color);
+          border: none;
+          border-radius: 8px;
+          color: var(--light-color);
+          font-family: "Nunito", sans-serif;
+          font-size: 20px;
+          font-weight: bold;
+
+          @media (max-width: 500px) {
+            padding: 10px 31px;
+          }
+
+          &:hover {
+            background-color: var(--light-color);
+            color: var(--blue-color);
+            transition: 0.2s all;
+          }
+        }
+    }
+  }
+}

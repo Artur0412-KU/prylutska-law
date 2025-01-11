@@ -1,0 +1,42 @@
+.reviewsContainer {
+  padding: 180px 70px;
+
+  @media(max-width: 500px) {
+    padding: 95px 32px;
+  }
+
+  h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 83px;
+  }
+
+  &Carousel {
+    display: flex;
+    gap: 50px;
+
+    &__customPrev, &__customNext {
+        background-color: transparent;
+        border: none;
+
+      @media(max-width: 500px) {
+        display: none;
+      }
+    }
+  }
+
+  &__item {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &_photo {
+      width: 400px;
+      height: 300px;
+      border-radius: 10px;
+
+    }
+  }
+
+}
