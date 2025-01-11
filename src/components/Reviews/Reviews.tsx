@@ -48,24 +48,21 @@ function Reviews() {
                 </button>
                 <Swiper
                     ref={swiperRef}
-                    spaceBetween={100}
                     slidesPerView={3}
                     breakpoints={{
-                        450: {
-                            slidesPerView: 1
+                        200: { // Виправлено порядок
+                            slidesPerView: 1,
+                            spaceBetween: 100
                         },
                         1000: {
-                            slidesPerView: 2
+                            slidesPerView: 2,
+                            spaceBetween: 100
                         },
                         1500: {
-                            slidesPerView: 3
-                        },
-                        200: {
-                            slidesPerView: 4
+                            slidesPerView: 3,
+                            spaceBetween: 100
                         }
                     }}
-                    onSlideChange={() => console.log('slide change')}
-                    onSwiper={(swiper) => console.log(swiper)}
                     navigation={{
                         prevEl: '.reviewsContainerCarousel__customPrev',
                         nextEl: '.reviewsContainerCarousel__customNext'
